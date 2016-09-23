@@ -1,0 +1,21 @@
+int led = 13;
+int push = 7;
+int val;
+
+void setup()
+{
+PinMode(led,output);
+PinMode(push,input);
+}
+
+val=digtalRead(push);
+if(val==1) //si
+{
+digitalWrite(led,HIGH);
+}
+{
+else // caso contrario
+ digitalWrite(led,LOW);
+}
+
+
