@@ -1,0 +1,37 @@
+#include <Servo.h>
+Servo der;
+Servo izq;
+
+void setup ()
+{
+  der.attach(9);
+  izq.attach(13);
+  }
+  
+void loop()
+{
+  der.write(0);
+  izq.write(180);
+    delay(6000);
+
+  der.write(180);
+  izq.write(90);
+    delay(2500);
+
+  der.write(0);
+  izq.write(180);
+    delay(3000);
+
+  der.write(90);
+  izq.write(90); 
+     delay(10000);  
+
+  
+}
+
+  
+  
+  
+  
+  
+
